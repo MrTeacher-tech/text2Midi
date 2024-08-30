@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 This project aims to turn a piece of text (.txt file) into a midi file. The midi file contains 3 tracks: bass, chords, melody. The general idea is that I analyze the sentiment of each sentence using nltk. Based on the sentiment, the chord is major, minor, or dissonant. Then, based on the sentiment and the syllables per word, the melody is composed. Each words syllable count determines the length of a melody note and the interval between notes. I get the syllable count using syllapy. The midi is written using midiutil. I was getting an error from the midiutil library and rather than fix my code, I put a try-except statement in the midiutil file. This didn\'92t change anything but if you see a print statement that says \'93Tried to pop from em]ty list\'94 (yes, I misspelled it), that\'92s my error statement but don\'92t worry about. Anyway, the goal is to have a piece of music that conveys the structure of a written piece, the music is not suppose to invoke the emotion of mood of the text. It\'92s somewhat of a translation. Anyway, it\'92s kind of cool and kind of useless. Feel free to let me know what you think of it.\
+\
+ADD YOUR .TXT FILE INTO THE PROJECT DIRECTORY, THEN GO INTO txt2Midi.py  AND CHANGE THE VARIABLE TEXT_PATH TO THE NAME OF YOUR TEXT FILE. YOU CAN CHANGE NUM_LINES TO THE AMOUNT OF LINES YOU WANT THE PROGRAM TO READ AND TURN INTO MIDI. HAVE FUN.}
